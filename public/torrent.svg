@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Magnet shape for torrent icon -->
+  <defs>
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ccff00"/>
+      <stop offset="100%" style="stop-color:#ff00ff"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Left arm of magnet -->
+  <path d="M12 8 L12 36 C12 47.046 20.954 56 32 56 C43.046 56 52 47.046 52 36 L52 8" 
+        stroke="url(#neonGrad)" 
+        stroke-width="8" 
+        stroke-linecap="square"
+        fill="none"/>
+  
+  <!-- Top caps -->
+  <rect x="8" y="4" width="12" height="8" fill="#00ffff"/>
+  <rect x="44" y="4" width="12" height="8" fill="#ff00ff"/>
+  
+  <!-- Bottom caps (attraction points) -->
+  <rect x="8" y="28" width="12" height="8" fill="#ccff00"/>
+  <rect x="44" y="28" width="12" height="8" fill="#ccff00"/>
+</svg>

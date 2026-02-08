@@ -1,0 +1,57 @@
+/* Custom Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Rubik+Glitch&display=swap');
+
+@import "tailwindcss";
+
+/* Custom Tailwind Theme */
+@theme {
+  --font-mono: "Space Mono", monospace;
+  --font-glitch: "Rubik Glitch", cursive;
+
+  --color-neon-green: #ccff00;
+  --color-neon-pink: #ff00ff;
+  --color-neon-cyan: #00ffff;
+  --color-void-black: #0a0a0a;
+
+  --shadow-hard: 8px 8px 0px 0px #000;
+  --shadow-hard-sm: 4px 4px 0px 0px #000;
+  --shadow-hard-white: 8px 8px 0px 0px #fff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccff00;
+  border: 3px solid #000;
+}
+
+/* Marquee Animation */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Selection Colors */
+::selection {
+  background: var(--color-neon-pink);
+  color: black;
+}
